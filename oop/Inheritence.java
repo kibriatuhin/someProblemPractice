@@ -1,0 +1,45 @@
+package oop;
+
+import com.sun.deploy.uitoolkit.impl.fx.AppletStageManager;
+
+import javax.xml.ws.FaultAction;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.time.temporal.Temporal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+
+class FunctionalInterface{
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        for(int i=5 ; i<10 ; i++)
+            list.add(i);
+        list.add(6);
+        list.add(8);
+
+      list.stream().filter(i->i%2!=0).forEach(System.out::println);
+
+    }
+}
+
+class Parent{
+   private int n=100;
+   private String name = "tuhin";
+   private void m1(){
+       System.out.println("parent privae method");
+   }
+}
+class Child extends Parent{
+
+}
+class Main{
+    public static void main(String[] args) {
+        Child ob = new Child();
+        System.out.println(ob);
+    }
+}
+abstract class Tuhin{
+
+}
