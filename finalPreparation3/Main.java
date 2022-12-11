@@ -256,7 +256,6 @@ class RotateArray{
             array[low++] = temp;
         }
 
-
     }
 
     public static void rotate(int[] nums , int k){
