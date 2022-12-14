@@ -36,7 +36,7 @@ public class MergedArray {
     public static void main(String[] args) {
         int[] array = {5,2,1,8,3};
         int st = 0;
-        int ed = array.length ;
+        int ed = array.length-1 ;
         divide(array,st,ed);
         System.out.println(Arrays.toString(array));
     }
