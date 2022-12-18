@@ -5,12 +5,14 @@ import java.util.Arrays;
 public class AverageInAStream {
     static float[] streamAvg(int[] arr, int n) {
         float[] result = new float[arr.length];
-        int j=0,k=0;
-        for (int i=1 ; i<=arr.length ; i++){
-            float f = arr[j++]/i;
-            result[k++] = f;
+        result[0] = arr[0];
+        for (int i=1 ; i<arr.length ; i++){
+            result[i] = (arr[i]+result[i-1]);
         }
-        System.out.println(Arrays.toString(result));
+        for (int i=0 ; i<arr.length ; i++){
+            result[i] = result[i]/(i+1);
+        }
+        //System.out.println(Arrays.toString(result));
         return result;
     }
     public static void main(String[] args) {
