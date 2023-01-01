@@ -43,3 +43,22 @@ class Main{
 abstract class Tuhin{
 
 }
+
+interface ParentTest{
+    void method();
+}
+interface ParentTest2 {
+    void method();
+}
+class ChildTest implements ParentTest,ParentTest2{
+
+    @Override
+    public void method() {
+        System.out.println("tuhin");
+    }
+}
+class MainTest{
+    public static void main(String[] args) {
+
+    }
+}
