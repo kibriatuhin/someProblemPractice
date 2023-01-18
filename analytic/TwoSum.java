@@ -30,6 +30,6 @@ public class TwoSum {
     }
     public static void main(String[] args) {
         int[] array = {2,7,11,15};
-        findTwoSum2(array,9);
+        findTwoSum2(array,13);
     }
 }
